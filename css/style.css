@@ -1,0 +1,23 @@
+.center-block {
+    width: 700px;
+}
+.text-center {
+    font-size: 24px;
+}
+h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-left: 20px;
+    font-weight: normal;
+}
+input[type=checkbox] {
+    margin-right: 10px;
+}
+.btn {
+    margin-top: 20px;
+    margin:0 auto;
+    display: block;
+}
