@@ -23,16 +23,17 @@ var testObj = {
         for (i = 0; i < 3; i++) {
             var card = document.createElement('div');
             card.classList.add('card');
-            form.appendChild('card');
+            form.appendChild(card);
 
-            guestion = document.createElement('h3')
-            guestion.innerHTML = ((i + 1) + '. Вопрос №' + (i + 1));
-            card.appendChild(question);
+              question = document.createElement('h3');
+              question.innerHTML = ((i + 1) + '. Вопрос № ' + (i + 1));
+              card.appendChild(question);
+
             for (j = 0; j < 3; j++) {
                 answerLabel = document.createElement('label');
                 answerInput = document.createElement('input');
                 answerInput.type = 'checkbox';
-                answerText = document.createTextNode('Вариант ответа №' + (j + 1));
+                answerText = document.createTextNode('Вариант ответа № ' + (j + 1));
                 card.appendChild(answerLabel);
                 answerLabel.appendChild(answerInput);
                 answerLabel.appendChild(answerText);
@@ -43,7 +44,7 @@ var testObj = {
         var button = document.createElement('button');
         button.classList.add('btn', 'btn-primary');
         button.type = 'submit';
-        button.innerHTML = 'Проверить мои результаты'ж
+        button.innerHTML = 'Проверить мои результаты';
         form.appendChild(button);
     },
     createTest: function () {
